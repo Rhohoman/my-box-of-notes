@@ -1,3 +1,3 @@
-# My Tools and useful components
+# Useful tips
 
 ## JS/REACT
