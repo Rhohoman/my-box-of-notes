@@ -1,8 +1,8 @@
-# Useful tips
+# My Useful tips
 
 ## JS/REACT
 
-## Algorithms
+## Algorithms - personal solutions
 
 Sock Merchant - finding pairs of socks
 https://repl.it/@rhohoman/Sock-Merchant
@@ -12,3 +12,6 @@ https://repl.it/@rhohoman/Fisher-Yates-shuffle-Algorithm
 
 Counting Valleys - counting valleys following a path
 https://repl.it/@rhohoman/Counting-Valleys
+
+Repeating Strings - string is repeated infinite number of times count a occurances
+https://repl.it/@rhohoman/Repeating-String
