@@ -59,7 +59,7 @@ Order
 ** Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the order property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2). **
 
 
-ALign Self
+Align Self
 
     flex-start: Items align to the top of the container.
     flex-end: Items align to the bottom of the container.
@@ -88,3 +88,10 @@ Align Content
     space-between: Lines display with equal spacing between them.
     space-around: Lines display with equal spacing around them.
     stretch: Lines are stretched to fit the container.
+
+
+## CSS Tricks and Useful links
+
+Negative margins on static elements
+
+https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/#:~:text=When%20a%20static%20element%20is,right%20as%20you%20might%20think.
