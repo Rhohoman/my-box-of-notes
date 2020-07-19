@@ -95,3 +95,13 @@ Align Content
 Negative margins on static elements
 
 https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/#:~:text=When%20a%20static%20element%20is,right%20as%20you%20might%20think.
+
+Transitions and Transforms
+
+https://thoughtbot.com/blog/transitions-and-transforms
+
+Cubic Bezier
+
+- helps manage the speed of transitions in 4 intervals
+
+https://www.w3schools.com/cssref/func_cubic-bezier.asp
