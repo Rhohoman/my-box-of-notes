@@ -9,6 +9,7 @@
     <h2 id="title">Classes: Static Methods</h2>
 
     <script type="text/javascript">
+        // https://www.youtube.com/watch?v=2ZphE5HcQPQ&ab_channel=freeCodeCamp.org
         class Rectangle {
             constructor(_width,_height,_color) {
                 // console.log("The Rectangle is being created!");
@@ -60,13 +61,80 @@
         // console.log(square1.height)
 
 
-        console.log(square1.area);
-        console.log(square1.area);
-        console.log(square1.area);
-        console.log(square1.area);
-        console.log(square1.area);
+        // console.log(square1.area);
+        // console.log(square1.area);
+        // console.log(square1.area);
+        // console.log(square1.area);
+        // console.log(square1.area);
 
-        console.log(square1.numOfRequestForArea)
+        // console.log(square1.numOfRequestForArea)
+
+        class Square1 {
+            constructor(_width) {
+                this.width = _width;
+                this.height = _width;
+            }
+
+            static equals (a,b) {
+                return a.width * a.height === b.width * b.height;
+            }
+
+            static isValidDimensions (width, height){
+                return width === height;
+            }
+        }
+
+        let square01 = new Square1(8);
+        let square02 = new Square1(9);
+
+        // console.log(Square1.equals(square01,square02));
+
+        // console.log(Square1.isValidDimensions(6,16))
+
+        class Person {
+            constructor(_name,_age){
+                this.name = _name;
+                this.age = _age;
+            }
+
+            describe(){
+                console.log(`I am ${this.name} and I am ${this.age} years old.`)
+            }
+        }
+
+        class Programmer extends Person {
+            constructor(_name, _age, _yearsOfExperience){
+                super(_name,_age);
+                this._yearsOfExperience = _yearsOfExperience;
+            }
+
+            code () {
+                console.log(`${this.name} is coding`)
+            }
+        }
+
+        // let person = new Person("Jeff", 45);
+        // let programmer = new Programmer("Dom", 56, 12);
+
+        // console.log(person)
+        // console.log(programmer)
+
+        const programmers = [
+            new Programmer("Dom", 56,5),
+            new Programmer("Jeff", 24,4)
+        ]
+
+        // programmer.describe();
+        
+        function developSoftware (programmers){
+            //develop software
+            for(let programmer of programmers) {
+                programmer.code();
+            }
+        }
+
+        developSoftware(programmers)
+
     </script>
 </body>
 </html>
