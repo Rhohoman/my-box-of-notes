@@ -5,6 +5,8 @@
 </head>
 <body>
     <h2 id="title">Classes: The Basics</h2>
+    <h2 id="title">Classes: Getters & Setters</h2>
+    <h2 id="title">Classes: Static Methods</h2>
 
     <script type="text/javascript">
         class Rectangle {
@@ -14,10 +16,57 @@
                 this.height = _height;
                 this.color = _color;
             }
+
+            getArea () {
+                return this.width * this.height;
+            }
+
+            printDescription () {
+                console.log(`I am a rectangle with the width of ${this.width}, a height of ${this.height} and a color of ${this.color}. I also have an area of ${this.getArea()}`);
+            }
         }
 
         let rectangle1 = new Rectangle(3,5,"blue");
         let rectangle2 = new Rectangle(6,9,"red");
+
+        // console.log("rectangle 1 area is ", rectangle1.getArea());
+        // console.log("rectangle 2 area is ", rectangle2.getArea());
+
+        // rectangle1.printDescription();
+        
+        class Square {
+            constructor (_width){
+                this.width = _width;
+                this.height = _width;
+                this.numOfRequestForArea = 0;
+            }
+
+            get area () {
+                this.numOfRequestForArea++;
+                return this.width * this.height;
+            }
+
+            set area (area) {
+                this.width = Math.sqrt(area);
+                this.height = this.width;
+            }
+        }
+
+        let square1 = new Square(4);
+        // console.log(square1.area);
+        
+        square1.area = 25;
+        // console.log(square1.width)
+        // console.log(square1.height)
+
+
+        console.log(square1.area);
+        console.log(square1.area);
+        console.log(square1.area);
+        console.log(square1.area);
+        console.log(square1.area);
+
+        console.log(square1.numOfRequestForArea)
     </script>
 </body>
 </html>
